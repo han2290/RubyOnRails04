@@ -1,0 +1,8 @@
+<h1>test</h1>
+<%@days.each do |day|%>
+    <strong><%=day%></strong>
+    <%for i in 0..@webtn["#{day}"]["name"].length %>
+        <img src = "<%@webtn["#{day}"]["img"][i]%>"/><br/>
+        <%=@webtn["#{day}"]["name"][i]%><br/><br/>
+    <%end%>
+<%end%>
